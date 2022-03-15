@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Aenggamenet, 앵게임넷, 앵지">
+  <meta name="description" content="Aenggamenet, 앵게임넷, 앵지">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>afreecaTV 앵지</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="styles/bootstrap4/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/tournament.css?ver=0.0.2" rel="stylesheet">
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div onclick="shuffleMember()" style="cursor:pointer;color:white;position: fixed;top:0;right:0;">
+	<h6>랜덤</h6>
+</div>
+<div id="tournament" style="height: 100%; width: 100%;">
+
+        <!-- <div class="region">
+		
+            <section class="round">
+			
+                <article class="game">
+                    <div class="team team-winner team-florida" data-team="florida">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<span class="team-name">앵앵지</span>
+                    </div>
+
+                    <div class="team team-loser team-ua-ms-mary" data-team="ua-ms-mary">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team team-loser team-colorado" data-team="colorado">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-winner team-pitt" data-team="pitt">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team team-winner team-ucla" data-team="ucla">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-loser team-tulsa" data-team="tulsa">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team team-loser team-vcu" data-team="vcu">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-winner team-stephen-f-austin" data-team="stephen-f-austin">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="round">
+
+                <article class="game">
+                    <div class="team team-winner team-florida" data-team="florida">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-loser team-pitt" data-team="pitt">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team team-winner team-ucla" data-team="ucla">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-loser team-stephen-f-austin" data-team="stephen-f-austin">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="round round-collapse">
+
+                <article class="game">
+                    <div class="team team-winner team-florida" data-team="florida">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-loser team-ucla" data-team="ucla">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+
+        <div class="region region-right">
+
+            <section class="round">
+
+                <article class="game">
+                    <div class="team team-florida" data-team="florida">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-ua-ms-mary" data-team="ua-ms-mary">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team team-colorado" data-team="colorado">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-pitt" data-team="pitt">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team team-ucla" data-team="ucla">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-tulsa" data-team="tulsa">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team team-vcu" data-team="vcu">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team team-stephen-f-austin" data-team="stephen-f-austin">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="round">
+
+                <article class="game">
+                    <div class="team" data-team="">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team" data-team="">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+                <article class="game">
+                    <div class="team" data-team="">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team" data-team="">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="round round-collapse">
+
+                <article class="game">
+                    <div class="team" data-team="">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+
+                    <div class="team" data-team="">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-right:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                    </div>
+                </article>
+
+            </section>
+
+        </div>
+		
+		
+		
+        <div id="final_four" class="round final-four">
+
+            <article class="game">
+                <div class="team" data-team="florida">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                </div>
+
+                <div class="team" data-team="">
+                        <img src="img/bj/앵지.jpg" style="height:100%;">
+						<div style="display:flex;flex-direction:column;margin-left:8px;">
+                        <span class="team-name">앵앵지</span>
+						</div>
+                </div>
+            </article>
+        </div>
+		 -->
+				
+	</div>
+	
+	
+	
+<section class="popup-container">
+    <div id="popup-box" class="popup-box" style="display:none;">
+		<div style="display:flex;flex-direction: row;border:.2em solid black;">
+			<div style="width:50%">
+				<img src="img/no_name.png" style="width:100%;" onerror="this.onerror=null; this.src='img/no_name.png'">
+			</div>
+			<div style="width:50%">
+				<img src="img/no_name.png" style="width:100%;" onerror="this.onerror=null; this.src='img/no_name.png'">
+			</div>
+		</div>
+		<div style="background-color:black;vertical-align: middle;">
+			<span style="font-size:2em;">상대 전적<span>
+		</div>
+		<div style="display:flex;flex-direction: row;border:.2em solid black;">
+			<div style="width:50%">
+				<span style="font-size:3em;">10<span>
+			</div>
+			<div style="width:50%">
+				<span style="font-size:3em;">10<span>
+			</div>
+		</div>
+		<div style="background-color:black;vertical-align: middle;">
+			<span style="font-size:2em;">경기맵<span>
+		</div>
+		<div style="border:.2em solid black;">
+			<span style="font-size:2.5em;">투혼 폴리 이클<span>
+		</div>
+		<div >
+			<a href="http://www.aengji.com/" target="_blank" style="text-decoration: none;color:white;font-size:3em;"><span style="font-size:1.1em;color:#FCC9FD;"><strong>앵</strong></span>게임넷</a>
+		</div>
+		
+		<!-- <h3>게임 정보</h3>
+		<p>
+			<span id="record"></span>
+			<br>
+			<span id="game-map"></span>
+		</p> -->		
+     </div>
+</section>
+<section class="winner-container">
+    <div id="winner-box" class="winner-box" style="display:none;">
+		<div style="display:flex;flex-direction: row;border:.2em solid black;">
+			<div style="width:100%">
+				<img src="img/no_name.png" style="width:100%;" onerror="this.onerror=null; this.src='img/no_name.png'">
+			</div>
+		</div>
+		<div style="background-color:black;vertical-align: middle;">
+			<span style="font-size:2em;">우승<span>
+		</div>
+		<div >
+			<a href="http://www.aengji.com/" target="_blank" style="text-decoration: none;color:white;font-size:4em;"><span style="font-size:1.1em;color:#FCC9FD;"><strong>앵</strong></span>게임넷</a>
+		</div>
+     </div>
+</section>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="js/aromanize.js"></script>
+  <script src="js/util.js?ver=0.0.3"></script>
+	<script type="text/javascript" src="js/data.js?ver=0.0.2"></script>
+	<script type="text/javascript" src="https://test.aengji.com/afreecatv/calmsung/tournament.min.js?ver=0.0.1"></script>
+<script>
+pageview();
+</script>
+</body>
+</html

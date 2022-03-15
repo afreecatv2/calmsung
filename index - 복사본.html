@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Aenggamenet, 앵게임넷, 앵지">
+  <meta name="description" content="Aenggamenet, 앵게임넷, 앵지">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아프리카TV 캄성여대</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css?ver=0.0.33" rel="stylesheet">
+	<link rel="stylesheet" href="css/zen.css?ver=0.0.32">
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-top">
+    <div class="container">
+	<h1><a href="index.html"><span style="font-size:2em;color:#FCC9FD;"><strong>캄성</strong></span><span style="font-size:1.9em;">여대</span></a></h1>
+	<!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+	
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="index.html">Home</a></li>
+		  <li><a class="nav-link" href="onair.html">CCTV</a></li>
+		  <li><a class="nav-link" href="http://www.aengji.com/aengdari/sadari_cs.html" target="_blank">사다리</a></li>
+		  <li><a class="nav-link" href="teamgame.html">StarCraft</a></li>
+		  <li><a class="nav-link" href="teamgame_lol.html">LOL</a></li>
+		  <!-- <li><a class="nav-link" href="fifa.html" target="_blank">FIFA4</a></li> -->
+		  <li><a class="nav-link" href="../wordpress/" target="_blank">게시판</a></li>
+		  <li><a class="nav-link" href="http://www.aengji.com/sc_tier/tier.html?name=%EC%8A%A4%ED%83%80%EB%8C%80%ED%95%99" target="_blank">대학 현황</a></li>
+		  <li><a class="nav-link" href="http://www.aengji.com/sc_tier/tier.html?name=%ED%8B%B0%EC%96%B4%ED%91%9C" target="_blank">CK 티어표</a></li>
+		  <li><a class="nav-link" href="http://www.aengji.com/sc_tier/tier.html?name=ELO" target="_blank">ELO 티어표</a></li>
+          <li><a class="nav-link" href="settings.html">설정</a></li>
+		  <li>
+		    <div id="zen">
+		      <span class="player"></span>
+		      <span class="circle"></span>
+		      <span class="progress"></span>
+		      <span class="buffer"></span>
+		      <span class="drag"></span>
+		      <div class="button">
+		      	<span class="icon play"></span>
+		      	<span class="icon pause"></span>
+		      </div>
+	        </div>
+		  </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  
+<a style="z-index:99977799" href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal" onclick="alert();">Click to open Modal</a>
+    
+  <nav id="context-menu" class="context-menu">
+    <ul class="context-menu__items">
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="t"><i class="fa fa-eye"></i> 재생/일시정지</a>
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="p"><i class="fa fa-eye"></i> 이전 곡</a>
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="n"><i class="fa fa-edit"></i> 다음 곡</a>
+      </li>
+      <li class="context-menu__separator">
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="c"><i class="fa fa-times"></i> 귀여운 브금</a>
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="s"><i class="fa fa-times"></i> 슬픈 브금</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="credits">
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>  
+  <script src="js/lazysizes.min.js" type="text/javascript" ></script>
+  <script src="js/data.js?ver=0.0.32"></script>
+    <script src="js/aromanize.js"></script>
+  <script src="js/util.js?ver=0.0.36"></script>
+       
+    <script type="text/javascript" src="js/jquery.rotate.js"></script>
+    <script type="text/javascript" src="js/jquery.grab.js"></script> 
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/zen.js?ver=0.0.33"></script>	
+    <script type="text/javascript" src="js/context.js?ver=0.0.34"></script>
+  <script>
+
+$(document).ready(function(){
+	$(document).mousemove(function (e) {
+		$(".pointer").css({ left: e.pageX + 20, top: e.pageY  - 200});
+	});
+});
+
+  pageview();
+  </script>
+</body>
+
+</html>

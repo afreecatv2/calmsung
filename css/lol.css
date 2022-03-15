@@ -1,0 +1,44 @@
+
+.lol-matchup{
+	
+	margin-bottom:10px;
+	background-color:#cccccc10;
+	/* border:2px solid white; */
+	border-radius:10px;	
+}
+.persons {
+	width:100%;
+  padding: 0;
+  margin: 0 0 0 15px;
+  /* margin: -10px 0 20px 15px; */
+}
+
+.persons li {
+  padding: 0;
+  margin: 0 0 0 -15px;
+  list-style: none;
+  display: inline-block;
+}
+
+/* .persons li a {
+  display: inline-block;
+  width: 45px;
+}
+
+.persons li a img {
+  max-width: 100%;
+} */
+
+.persons li img {
+  display: inline-block;
+  width: 45px;
+  max-width: 100%;
+}
+
+.persons img {
+  padding: 0;
+  margin: 0 0 0 -15px;
+  display: inline-block;
+  width: 45px;
+  max-width: 100%;
+}

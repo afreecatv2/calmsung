@@ -1,0 +1,76 @@
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.remove {
+  display: none !important;
+}
+
+.blur {
+  filter: blur(12px);
+}
+
+.loading-init {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.loading-init__header {
+  font-size: 2.2em;
+}
+.loading-init__status {
+  margin-top: 1em;
+  font-size: 0.8em;
+  opacity: 0.75;
+}
+
+.stage-container {
+  overflow: hidden;
+  box-sizing: initial;
+  border: 1px solid #222;
+  margin: -1px;
+}
+@media (max-width: 840px) {
+  .stage-container {
+    border: none;
+    margin: 0;
+  }
+}
+
+.canvas-container {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s;
+}
+.canvas-container canvas {
+  position: absolute;
+  mix-blend-mode: lighten;
+  transform: translateZ(0);
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+@media (min-width: 840px) {
+  .controls {
+    visibility: visible;
+  }
+  .controls.hide:hover {
+    opacity: 1;
+  }
+}
+
+.close-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

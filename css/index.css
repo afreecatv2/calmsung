@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.tier-thumb{
+	display: none;
+	/* width:480px;
+	height:270px; */
+	width:960px;
+	height:540px;
+    position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 0.1em solid white;
+}
+.off_image{
+	position: absolute;
+	pointer-events: none;
+}
+.off_div{	
+	position: absolute;
+	cursor: pointer;
+}
+.off_div:hover + img{
+	/* transition: opacity 1s; */
+	opacity: 0;
+}
+.off_div:hover + img{
+	/* transition: opacity 1s; */
+	opacity: 0;
+}
+.off_div:hover .tier-thumb{
+	display: block;
+}

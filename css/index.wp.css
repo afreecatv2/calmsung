@@ -14,12 +14,12 @@
 	position: absolute;
 	pointer-events: none;
 }
-.off_div{	
+.off_div{
 	position: absolute;
 	cursor: pointer;
 }
 .off_div:hover + img{
-	transition: opacity .3s;
+	transition: opacity .5s;
 	opacity: 0;
 }
 .off_div:hover .tier-thumb{

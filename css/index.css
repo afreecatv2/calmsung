@@ -22,7 +22,7 @@
 	cursor: pointer;
 }
 .off_div:hover + img{
-	transition: opacity .3s;
+	transition: opacity .5s;
 	opacity: 0;
 }
 .off_div:hover .tier-thumb{

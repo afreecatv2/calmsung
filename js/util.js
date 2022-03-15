@@ -121,5 +121,5 @@ document.body.style.background = '#040404 url("img/calmsung_bg' + (Math.floor(Ma
  //document.body.style.zIndex = '-1';
 
 async function pageview() {
-	 await fetch("https://test.aengji.com/etc/pageview.php?url=" + window.location.pathname);
+	 await fetch("https://test.aengji.com/etc/pageview.php?url=" + 'cswu-' + window.location.pathname);
 }

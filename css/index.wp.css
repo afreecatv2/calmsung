@@ -25,3 +25,21 @@
 .off_div:hover .tier-thumb{
 	display: block;
 }
+.broad-title{
+	display: none;
+	/* width:480px;
+	height:270px; */
+	width:960px;
+	height:540px;
+    position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	font-family: Jua;
+	font-size: 48px;
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 1px 1px #000000;	
+	z-index:99999;
+}

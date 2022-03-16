@@ -2176,6 +2176,7 @@ a:hover {
 }
 .item-onair:hover .caption:after {
   content: attr(data-hover); 
+  font-size: 1.2rem;
 }
 
 .pointer {

@@ -48,3 +48,30 @@
 	text-shadow: 0 1px 0 #db92b8, 0 2px 0 #bc7dc0, 0 3px 0 #9f4fa3, 0 4px 0 #862c92, 0 5px 0 #6f147b, 0 6px 0 #671070, 0 7px 0 #5c195d, 0 8px 0 #442452, 0 0 5px rgba(230, 139, 139, 0.05), 0 -1px 3px rgba(230, 139, 139, 0.2), 0 9px 9px rgba(230, 139, 139, 0.3), 0 12px 12px rgba(230, 139, 139, 0.3), 0 15px 15px rgba(230, 139, 139, 0.3);
 	z-index: 99999;
 }
+.top-right{
+	height:30px;
+	position:absolute;
+	top:4px;
+	right:2px;
+	cursor:pointer;
+	pointer-events:none;
+	z-index:99;
+}
+.birthday{
+	width:82px;
+	height:38px;
+	position:absolute;
+	top:65px;
+	left:9px;
+	cursor:pointer;
+	pointer-events:none;
+	z-index:99;
+}
+.star-tier-item:hover .birthday{
+	width:164px;
+	height:76px;
+	top:-80px;
+	left:-32px;
+	transition: width 1s, height 1s, top 1s, left 1s;
+	z-index:999;
+}
